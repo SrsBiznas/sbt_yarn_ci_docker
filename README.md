@@ -18,7 +18,7 @@ Latest includes:
 ----------------
 
     java   | OpenJDK Runtime Environment (build 10.0.2+13-Debian-1)
-    flyway | 5.1.4
-    scala  | 2.12.6
+    flyway | 5.2.0
+    scala  | 2.12.7
     sbt    | 1.2.1
-    yarn   | 1.9.4
+    yarn   | 1.10.1
