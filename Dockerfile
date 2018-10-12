@@ -23,5 +23,9 @@ RUN apt-get update
 RUN apt-get install sbt yarn -y
 
 # Useful for caching the baseline scala dependencies
+COPY cached_deps.sbt /build.sbt
 RUN sbt sbtVersion
+# This will force both the compile deps and the test deps
+RUN sbt test
+RUN rm -f build.sbt
 RUN yarn --version

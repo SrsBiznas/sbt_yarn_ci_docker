@@ -22,3 +22,15 @@ Latest includes:
     scala  | 2.12.7
     sbt    | 1.2.1
     yarn   | 1.10.1
+
+Cached Scala Libraries:
+-----------------------
+    
+    de.mkammerer           | argon2-jvm         | 2.5
+    org.flywaydb           | flyway-play        | 5.0.0
+    javax.xml.bind         | jaxb-api           | 2.3.1
+    com.typesafe.play      | play               | 2.6.20
+    com.typesafe.play      | play-json          | 2.6.10
+    com.typesafe.play      | play-slick         | 3.0.3
+    org.postgresql         | postgresql         | 42.2.5
+    org.scalatestplus.play | scalatestplus-play | 3.1.2
