@@ -18,14 +18,14 @@ Latest includes:
 ----------------
 
     java   | OpenJDK Runtime Environment (build 10.0.2+13-Debian-1)
-    flyway | 5.2.0
+    flyway | 5.2.1
     scala  | 2.12.7
-    sbt    | 1.2.1
-    yarn   | 1.10.1
+    sbt    | 1.2.6
+    yarn   | 1.12.3
 
 Cached Scala Libraries:
 -----------------------
-    
+
     de.mkammerer           | argon2-jvm         | 2.5
     org.flywaydb           | flyway-play        | 5.0.0
     javax.xml.bind         | jaxb-api           | 2.3.1
