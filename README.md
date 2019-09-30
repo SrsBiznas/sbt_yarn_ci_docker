@@ -17,20 +17,8 @@ This image is built on openjdk:latest with the following tools installed:
 Latest includes:
 ----------------
 
-    java   | OpenJDK Runtime Environment (build 10.0.2+13-Debian-1)
-    flyway | 5.2.1
-    scala  | 2.12.7
-    sbt    | 1.2.6
-    yarn   | 1.12.3
-
-Cached Scala Libraries:
------------------------
-
-    de.mkammerer           | argon2-jvm         | 2.5
-    org.flywaydb           | flyway-play        | 5.0.0
-    javax.xml.bind         | jaxb-api           | 2.3.1
-    com.typesafe.play      | play               | 2.6.20
-    com.typesafe.play      | play-json          | 2.6.10
-    com.typesafe.play      | play-slick         | 3.0.3
-    org.postgresql         | postgresql         | 42.2.5
-    org.scalatestplus.play | scalatestplus-play | 3.1.2
+    java   | OpenJDK Runtime Environment AdoptOpenJDK (build 11.0.4+11)
+    flyway | 5.2.4
+    scala  | 2.12.10
+    sbt    | 1.3.2
+    yarn   | 1.19.0

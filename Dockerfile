@@ -1,13 +1,21 @@
 # This dockerfile pre-caches some of the tools used for the CI process
 # for React + Play stacks
 
-FROM openjdk:latest
+FROM adoptopenjdk/openjdk11
 
 # Snapshot this for the description
 RUN java -version
 
 # Ensure flyway is present
 COPY flyway-* /opt/flyway
+
+
+# Ensure the RNG in non-blocking during tests
+COPY java.security $JAVA_HOME/lib/security
+
+RUN cat $JAVA_HOME/lib/security/java.security
+
+RUN apt-get update && apt-get install -y gnupg2
 
 # Add sbt repo
 RUN echo "deb https://dl.bintray.com/sbt/debian /" | tee -a /etc/apt/sources.list.d/sbt.list
@@ -23,9 +31,6 @@ RUN apt-get update
 RUN apt-get install sbt yarn -y
 
 # Useful for caching the baseline scala dependencies
-COPY cached_deps.sbt /build.sbt
 RUN sbt sbtVersion
 # This will force both the compile deps and the test deps
-RUN sbt test
-RUN rm -f build.sbt
 RUN yarn --version
